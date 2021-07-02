@@ -86,13 +86,12 @@ at::Tensor nms(const at::Tensor boxes, float nms_overlap_thresh);
 ```
 at::Tensor roi_align_forward(const at::Tensor& input,
                                  const at::Tensor& rois,
-                                 const float spatial_scale,
                                  const int pooled_height,
                                  const int pooled_width,
                                  const int pooled_depth,
                                  const int sampling_ratio);
 // input: [n, c, h, w, d]
-// rois columns: bi, x1, y1, x2, y2, z1, z2
+// rois columns: bi, x1, y1, x2, y2, z1, z2, scaled to feature map size.
 ```
 
 ### References

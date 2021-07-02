@@ -16,7 +16,7 @@ sudo python3 build.py build_ext develop
 ```
 
 ### Usage
-Must **import torch** before **import torch_op_2d or import torch_op_3d**.
+Must **import torch** before **import torch_op_2d** or **import torch_op_3d**.
 ```
 import torch
 import torch_op_2d
